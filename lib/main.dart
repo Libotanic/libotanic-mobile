@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:libotanic/presentation/places_list_page.dart';
 
 void main() {
@@ -25,51 +26,52 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container (
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            stops: [0.1, 0.2, 0.9],
-            colors: [Color(0x001fad08), Color(0x00f6eedd), Color(0x00f6eedd)],
+        body: SafeArea(
+      child: Center(
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              stops: [0.0, 0.15, 0.9],
+              colors: [Color(0xff1fad08), Color(0xfff6eedd), Color(0xfff6eedd)],
+            ),
+          ),
+          child: Column(
+            children: [
+              const SizedBox(height: 16,),
+              Text(
+                "Libotanic",
+                style: GoogleFonts.raleway(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 32,
+                ),
+              ),
+              const SizedBox(height: 16,),
+              Expanded(
+                child: Container(
+                  decoration: const BoxDecoration(
+                      color: Color(0xFFF6EEDD),
+                      borderRadius: BorderRadius.all(Radius.circular(50))),
+                  child: PlacesListPage(),
+                ),
+              )
+            ],
           ),
         ),
-        child: Column(
-          children: [
-            const Text("Libotanic"),
-            Expanded(
-              child: Container(
-                decoration: const BoxDecoration (
-                  color: Color(0x00F6EEDD),
-                  borderRadius: BorderRadius.all(Radius.circular(50))
-                ),
-                child: PlacesListPage(),
-              ),
-            )
-          ],
-        ),
-      )
-    );
+      ),
+    ));
   }
 }

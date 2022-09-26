@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/presentation/plants_list_page.dart';
+import 'package:libotanic/presentation/ordos_list_page.dart';
 import 'package:libotanic/test_info.dart';
+import 'package:libotanic/widgets/background_widget.dart';
 
 import '../widgets/place_card.dart';
 
@@ -16,8 +17,9 @@ class PlacesListPage extends StatelessWidget {
             onTap: () =>
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>
-                        PlantsListPage())),);
-        },),
+                        BackgroundWidget(page: OrdosListPage()))),);
+        },
+      ),
     );
   }
 }

@@ -46,10 +46,7 @@ class PlaceCard extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               place.name,
-              style: GoogleFonts.raleway(
-                color: Colors.white,
-                fontSize: 20,
-              ),
+              style: Theme.of(context).textTheme.bodySmall,
               textAlign: TextAlign.center,
             ),
           ),

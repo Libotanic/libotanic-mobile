@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/presentation/ordos_list_page.dart';
+import 'package:libotanic/presentation/plants_page.dart';
 import 'package:libotanic/test_info.dart';
 import 'package:libotanic/widgets/background_widget.dart';
 
 import '../widgets/place_card.dart';
 
 class PlacesListPage extends StatelessWidget {
+  const PlacesListPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +19,7 @@ class PlacesListPage extends StatelessWidget {
             onTap: () =>
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>
-                        BackgroundWidget(page: OrdosListPage()))),);
+                         BackgroundWidget(page: PlantsPage()))),);
         },
       ),
     );

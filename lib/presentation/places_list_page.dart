@@ -15,11 +15,14 @@ class PlacesListPage extends StatelessWidget {
       child: ListView.builder(
         itemCount: TestInfo.places.length,
         itemBuilder: (context, id) {
-          return GestureDetector(child: PlaceCard(place: TestInfo.places[id],),
-            onTap: () =>
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>
-                         BackgroundWidget(page: PlantsPage()))),);
+          return GestureDetector(
+            child: PlaceCard(
+              place: TestInfo.places[id],
+            ),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) =>
+                    const BackgroundWidget(page: PlantsPage()))),
+          );
         },
       ),
     );

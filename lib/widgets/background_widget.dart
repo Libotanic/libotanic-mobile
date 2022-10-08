@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class BackgroundWidget extends StatelessWidget {
   final Widget page;
@@ -16,7 +15,11 @@ class BackgroundWidget extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               stops: [0.0, 0.15, 0.9],
-              colors: [Color(0xff1fad08), Color(0xfff6eedd), Color(0xfff6eedd)],
+              colors: [
+                Color(0xff1fad08),
+                Color(0xfff6eedd),
+                Color(0xfff6eedd),
+              ],
             ),
           ),
           child: Column(children: [

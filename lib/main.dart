@@ -20,21 +20,21 @@ class MyApp extends StatelessWidget {
           textTheme: TextTheme(
             bodySmall: GoogleFonts.raleway(
               fontSize: 20,
-              color: Colors.white
+              color: Colors.white,
             ),
             labelSmall: GoogleFonts.raleway(
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-                color: Colors.black
+              fontWeight: FontWeight.w600,
+              fontSize: 20,
+              color: Colors.black,
             ),
             bodyMedium: GoogleFonts.raleway(
               fontSize: 27,
-              color: Colors.white
+              color: Colors.white,
             ),
             titleLarge: GoogleFonts.raleway(
               fontWeight: FontWeight.w600,
               fontSize: 32,
-                color: Colors.white
+              color: Colors.white,
             ),
           ),
         ),

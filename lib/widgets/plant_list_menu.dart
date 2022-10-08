@@ -5,16 +5,18 @@ import 'package:libotanic/widgets/search_button.dart';
 import 'mode_changing_button.dart';
 
 class PlantListMenu extends StatelessWidget {
+  const PlantListMenu({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const ReturnButton(),
+        children: const [
+          ReturnButton(),
           ModeChangingButton(),
-          const SearchButton()
+          SearchButton(),
         ],
       ),
     );

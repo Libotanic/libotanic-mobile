@@ -65,7 +65,7 @@ class PlaceCard extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 place.name,
-                style: Theme.of(context).textTheme.bodySmall,
+                style: Theme.of(context).textTheme.headline3,
                 textAlign: TextAlign.center,
               ),
             ),

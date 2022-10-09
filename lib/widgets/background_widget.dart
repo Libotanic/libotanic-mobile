@@ -28,7 +28,7 @@ class BackgroundWidget extends StatelessWidget {
             ),
             Text(
               "Libotanic",
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context).textTheme.headline1,
             ),
             const SizedBox(
               height: 16,

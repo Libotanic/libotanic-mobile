@@ -17,7 +17,7 @@ class ModeChangingButton extends StatelessWidget {
               ),
             )
           ],
-          style: Theme.of(context).textTheme.labelSmall),
+          style: Theme.of(context).textTheme.headline6),
     );
   }
 }

@@ -10,9 +10,13 @@ class DivisionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      const PlantListMenu(),
-      DivisionList(division)
-    ],);
+    return Column(
+      children: [
+        const PlantListMenu(),
+        DivisionList(
+          division: division,
+        ),
+      ],
+    );
   }
 }

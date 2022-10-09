@@ -40,7 +40,7 @@ class PlantCategoryCard extends StatelessWidget {
           Text(
             //TODO: style copypaste
             category.name,
-            style: Theme.of(context).textTheme.bodyMedium,
+            style: Theme.of(context).textTheme.headline2,
             textAlign: TextAlign.center,
           ),
         ],

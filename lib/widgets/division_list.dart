@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:libotanic/models/plant_class.dart';
 import 'package:libotanic/test_info.dart';
 import 'package:libotanic/widgets/plant_category_card.dart';
+import 'package:libotanic/widgets/plant_class_list.dart';
 
 import '../models/division.dart';
 
 class DivisionList extends StatelessWidget {
   final Division division;
 
-  const DivisionList(this.division, {Key? key}) : super(key: key);
+  const DivisionList({Key? key, required this.division}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,18 +20,13 @@ class DivisionList extends StatelessWidget {
         itemCount: classes.length,
         itemBuilder: (context, id) {
           return ExpansionWidget(
-            initiallyExpanded: true,
             titleBuilder:
-                (double animationValue, _, bool isExpaned, toogleFunction) {
+                (double animationValue, _, bool isExpanded, toggleFunction) {
               return InkWell(
-                  onTap: toogleFunction,
+                  onTap: toggleFunction,
                   child: PlantCategoryCard(category: classes[id]));
             },
-            content: Text("Expanded"),
-          );
-          return ExpansionTile(
-            controlAffinity: ListTileControlAffinity.platform,
-            title: PlantCategoryCard(category: classes[id]),
+            content: PlantClassList(plantClass: classes[id]),
           );
         },
       ),

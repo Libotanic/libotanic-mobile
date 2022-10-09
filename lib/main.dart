@@ -18,23 +18,32 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           textTheme: TextTheme(
-            bodySmall: GoogleFonts.raleway(
-              fontSize: 20,
-              color: Colors.white,
-            ),
-            labelSmall: GoogleFonts.raleway(
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-              color: Colors.black,
-            ),
-            bodyMedium: GoogleFonts.raleway(
-              fontSize: 27,
-              color: Colors.white,
-            ),
-            titleLarge: GoogleFonts.raleway(
+            headline1: GoogleFonts.raleway(
               fontWeight: FontWeight.w600,
               fontSize: 32,
               color: Colors.white,
+            ),
+            headline2: GoogleFonts.raleway(
+              fontSize: 27,
+              color: Colors.white,
+            ),
+            headline3: GoogleFonts.raleway(
+              fontSize: 20,
+              color: Colors.white,
+            ),
+            headline4: GoogleFonts.raleway(
+              fontWeight: FontWeight.w500,
+              fontSize: 27,
+              color: Colors.black,
+            ),
+            subtitle2: GoogleFonts.raleway(
+              fontSize: 20,
+              color: const Color(0xff828282),
+            ),
+            headline6: GoogleFonts.raleway(
+              fontWeight: FontWeight.w600,
+              fontSize: 20,
+              color: Colors.black,
             ),
           ),
         ),

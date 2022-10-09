@@ -39,7 +39,7 @@ class PlantCategoryCard extends StatelessWidget {
           ),
           Text(
             //TODO: style copypaste
-            category.name,
+            category.nameRus,
             style: Theme.of(context).textTheme.headline2,
             textAlign: TextAlign.center,
           ),

@@ -45,6 +45,10 @@ class MyApp extends StatelessWidget {
               fontSize: 20,
               color: Colors.black,
             ),
+            bodyText1: GoogleFonts.raleway(
+              fontSize: 16,
+              color: Colors.black,
+            ),
           ),
         ),
         home: const MyHomePage(),

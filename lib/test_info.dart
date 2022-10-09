@@ -1,3 +1,4 @@
+import 'package:libotanic/models/extended_plant.dart';
 import 'package:libotanic/models/plant_class.dart';
 import 'package:libotanic/models/simple_plant.dart';
 
@@ -11,16 +12,19 @@ class TestInfo {
   ];
 
   static List<Division> divisions = [
-    const Division("Хвойные", "assets/division/pinophyta.jpg"),
+    const Division(nameRus: "Хвойные", imageURL: "assets/division/pinophyta.jpg"),
   ];
 
   static Map<Division, List<PlantClass>> classes = {
-    divisions[0]: [PlantClass("Пинопсиды", "assets/class/pinopsida.jpg", divisions[0])]
+    divisions[0]: [PlantClass(nameRus: "Пинопсиды", imageURL: "assets/class/pinopsida.jpg", division: divisions[0])]
   };
 
+  static Map<int, ExtendedPlant> extendedPlantsMap = {
+    0: ExtendedPlant(0, classes[divisions[0]]![0], "Пихта цельнолистная", "Abies holophylla",),
+  };
   static Map<PlantClass, List<SimplePlant>> plantsMap = {
     classes[divisions[0]]![0]: [
-      SimplePlant(classes[divisions[0]]![0], "Пихта цельнолистная", "Abies holophylla")
+      extendedPlantsMap[0]!
     ],
   };
 }

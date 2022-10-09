@@ -1,5 +1,10 @@
 abstract class PlantCategory {
-  final String name, imageURL;
+  final String nameRus, imageURL;
+  final String? nameLat;
 
-  const PlantCategory(this.name, this.imageURL);
+  const PlantCategory({required this.nameRus, required this.imageURL, this.nameLat});
+  @override
+  String toString() {
+    return "$nameRus | $nameLat";
+  }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../models/division.dart';
-import '../widgets/division_list.dart';
-import '../widgets/plant_list_menu.dart';
+import '../widgets/lists/division_list.dart';
+import '../widgets/plants_list_menu/plant_list_menu.dart';
 
 class DivisionPage extends StatelessWidget {
   final Division division; //TODO: odd traversing

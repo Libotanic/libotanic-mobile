@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:libotanic/models/plant_class.dart';
 import 'package:libotanic/test_info.dart';
 import 'package:libotanic/widgets/plant_category_card.dart';
-import 'package:libotanic/widgets/plant_class_list.dart';
+import 'package:libotanic/widgets/lists/plant_class_list.dart';
 
-import '../models/division.dart';
+import '../../models/division.dart';
 
 class DivisionList extends StatelessWidget {
   final Division division;

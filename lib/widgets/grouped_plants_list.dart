@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libotanic/widgets/background_widget.dart';
 import 'package:libotanic/widgets/plant_category_card.dart';
 
 import '../presentation/division_page.dart';
@@ -17,8 +18,13 @@ class GroupedPlantsList extends StatelessWidget {
             child: PlantCategoryCard(
               category: TestInfo.divisions[id],
             ),
-            onTap: () => Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => DivisionPage())),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => BackgroundWidget(
+                  page: DivisionPage(TestInfo.divisions[id]),
+                ),
+              ),
+            ),
           );
         },
       ),

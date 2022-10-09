@@ -14,11 +14,13 @@ class TestInfo {
     const Division("Хвойные", "assets/division/pinophyta.jpg"),
   ];
 
-  static List<PlantClass> classes = [PlantClass("Пинопсиды", "", divisions[0])];
+  static Map<Division, List<PlantClass>> classes = {
+    divisions[0]: [PlantClass("Пинопсиды", "assets/class/pinopsida.jpg", divisions[0])]
+  };
 
   static Map<PlantClass, List<SimplePlant>> plantsMap = {
-    classes[0]: [
-      SimplePlant(classes[0], "Пихта цельнолистная", "Abies holophylla")
+    classes[divisions[0]]![0]: [
+      SimplePlant(classes[divisions[0]]![0], "Пихта цельнолистная", "Abies holophylla")
     ],
   };
 }

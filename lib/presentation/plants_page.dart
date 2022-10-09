@@ -9,10 +9,10 @@ class PlantsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: const [
         PlantListMenu(),
         //SizedBox(height: 8,),
-        const PlantsList()
+        PlantsList()
       ],
     );
   }

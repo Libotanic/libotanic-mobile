@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/widgets/plants_list.dart';
+import 'package:libotanic/widgets/lists/plants_list.dart';
 
 import '../widgets/plant_list_menu.dart';
 

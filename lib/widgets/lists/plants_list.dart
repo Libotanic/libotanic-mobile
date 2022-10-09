@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/widgets/grouped_plants_list.dart';
+
+import 'grouped_plants_list.dart';
 
 enum Mode { map, alphabeticalList, groupedList }
 

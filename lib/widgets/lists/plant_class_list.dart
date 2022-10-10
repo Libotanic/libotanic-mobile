@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:libotanic/models/plant_class.dart';
 import 'package:libotanic/presentation/places_list_page.dart';
 import 'package:libotanic/widgets/background_widget.dart';
@@ -24,10 +25,23 @@ class PlantClassList extends StatelessWidget {
         itemBuilder: (context, id) {
           return PlantNameWidget(
             plant: plants[id],
-            /*onTap: () => Navigator.of(context).push(MaterialPageRoute(
+            onTap: () => SchedulerBinding.instance.addPostFrameCallback((_) {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => BackgroundWidget(
+                        page: PlantDetailPage(
+                            plant: TestInfo.extendedPlantsMap[plants[id].id]!),
+                      ),));
+            },),
+                /*() /*{debugPrint("testInfo");} */=> Navigator.of(context).push(
+              MaterialPageRoute(
                 builder: (context) => BackgroundWidget(
-                    PlantDetailPage(
-                        plant: TestInfo.extendedPlantsMap[plants[id].id]!)))),*/
+                  page: PlantDetailPage(
+                      plant: TestInfo.extendedPlantsMap[plants[id].id]!),
+                ),
+              ),
+            ),*/
           );
         },
       ),

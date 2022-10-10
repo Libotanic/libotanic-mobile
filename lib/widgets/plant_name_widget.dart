@@ -4,7 +4,7 @@ import '../models/simple_plant.dart';
 
 class PlantNameWidget extends StatelessWidget {
   final SimplePlant plant;
-  final Function? onTap;
+  final Function()? onTap;
 
   const PlantNameWidget({Key? key, required this.plant, this.onTap}) : super(key: key);
   @override
@@ -18,7 +18,7 @@ class PlantNameWidget extends StatelessWidget {
         plant.nameLat,
         style: Theme.of(context).textTheme.subtitle2,
       ),
-      onTap: onTap == null? null : onTap!(),
+      onTap: onTap == null? null : onTap!,
     );
   }
 

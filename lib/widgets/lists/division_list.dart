@@ -26,7 +26,10 @@ class DivisionList extends StatelessWidget {
                   onTap: toggleFunction,
                   child: PlantCategoryCard(category: classes[id]));
             },
-            content: PlantClassList(plantClass: classes[id]),
+            maintainState: true,
+            content: PlantClassList(
+              plantClass: classes[id],
+            ),
           );
         },
       ),

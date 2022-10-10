@@ -12,7 +12,7 @@ class PlantClassification extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoContainer(
       title: "Место в классификации",
-      child: classification != null
+      child: classification == null
           ? Text(
               "К сожалению, у нас нет классификации этого растения.",
               style: Theme.of(context).textTheme.subtitle2,

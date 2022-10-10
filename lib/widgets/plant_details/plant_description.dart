@@ -9,7 +9,7 @@ class PlantDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoContainer(
       title: "Историческая справка",
-      child: description != null
+      child: description == null
           ? Text(
         "К сожалению, у нас нет описания этого растения.",
         style: Theme.of(context).textTheme.subtitle2,

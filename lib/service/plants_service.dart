@@ -59,6 +59,9 @@ class PlantsService {
 
   static Future<List<Division>> fetchDivisions() async {
     var list = await PlantsService.fetchPlantsListAll();
+    if (kDebugMode) {
+      print(list);
+    }
     var classes = await Stream.fromIterable(list)
         .map((item) => item.plantClass.division)
         .toSet();

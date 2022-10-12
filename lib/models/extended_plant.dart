@@ -4,6 +4,7 @@ import 'package:libotanic/models/division.dart';
 import 'package:libotanic/models/plant_class.dart';
 import 'package:libotanic/models/plant_detail.dart';
 import 'package:libotanic/models/simple_plant.dart';
+import 'package:libotanic/test_info.dart';
 
 class ExtendedPlant {
   late int id;
@@ -23,11 +24,13 @@ class ExtendedPlant {
     plantClass = PlantClass(
       division: Division(
           nameRus: parsedJson['otdel'],
-          imageURL: "assets/division/pinophyta.jpg"),
-      nameRus: parsedJson['otrad'],
-      imageURL: "assets/class/pinopsida.jpg",
+          imageURL: TestInfo.divisionsImages[parsedJson['otdel']]!), //TODO: image for unknown
+      nameRus: parsedJson['classis'],
+      imageURL: TestInfo.classesImages[parsedJson['classis']]!,
     );
     nameRus = parsedJson['rus_name'];
     nameLat = parsedJson['lat_name'];
+    imageURL = parsedJson['mainPic'];
+    description = parsedJson['descr'];
   }
 }

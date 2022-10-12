@@ -7,4 +7,13 @@ abstract class PlantCategory {
   String toString() {
     return "$nameRus | $nameLat";
   }
+
+  @override
+  bool operator ==(Object other) =>
+      other is PlantCategory &&
+          other.runtimeType == runtimeType &&
+          other.nameRus == nameRus;
+
+  @override
+  int get hashCode => nameRus.hashCode;
 }

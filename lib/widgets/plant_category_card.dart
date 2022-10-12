@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:libotanic/models/plant_category.dart';
 
 class PlantCategoryCard extends StatelessWidget {
-  final PlantCategory category;
+  final PlantCategory? category;
 
   const PlantCategoryCard({
     Key? key,
@@ -22,10 +22,10 @@ class PlantCategoryCard extends StatelessWidget {
             offset: const Offset(0, 4), // changes position of shadow
           )
         ],
-        image: DecorationImage(
-          image: AssetImage(category.imageURL),
+        image: category != null? DecorationImage(
+          image: AssetImage(category!.imageURL),
           fit: BoxFit.cover,
-        ),
+        ) : null,
       ),
       child: Stack(
         alignment: Alignment.center,
@@ -39,7 +39,7 @@ class PlantCategoryCard extends StatelessWidget {
           ),
           Text(
             //TODO: style copypaste
-            category.nameRus,
+            category?.nameRus??"",
             style: Theme.of(context).textTheme.headline2,
             textAlign: TextAlign.center,
           ),

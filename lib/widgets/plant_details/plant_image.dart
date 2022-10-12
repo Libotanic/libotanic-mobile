@@ -7,7 +7,7 @@ class PlantImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: EdgeInsets.all(16), child: imageURL == null
+    return Padding(padding: const EdgeInsets.all(16), child: imageURL == null
         ? Text(
       "К сожалению, у нас нет картинки этого растения.",
       style: Theme.of(context).textTheme.subtitle2,

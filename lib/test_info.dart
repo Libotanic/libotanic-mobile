@@ -30,4 +30,14 @@ class TestInfo {
       extendedPlantsMap[0]!
     ],
   };
+
+  static Map<String, String> divisionsImages = {
+    "Хвойные": "assets/division/pinophyta.jpg",
+    "Покрытосеменные": "assets/division/magnoliophyta.jpg",
+    "Цветковые": "assets/division/magnoliophyta.jpg"
+  };
+  static Map<String, String> classesImages = {
+    "Pinopsida": "assets/class/pinopsida.jpg",
+    "Magnoliopsida": "assets/class/magnoliopsida.jpg"
+  };
 }

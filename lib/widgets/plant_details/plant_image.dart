@@ -12,7 +12,7 @@ class PlantImage extends StatelessWidget {
       "К сожалению, у нас нет картинки этого растения.",
       style: Theme.of(context).textTheme.subtitle2,
     )
-        : Image.asset(imageURL!),
+        : Image.network(imageURL!),
     ); //TODO: Why should I check imageURL
   }
 }

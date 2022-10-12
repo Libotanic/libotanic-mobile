@@ -13,7 +13,8 @@ class PlantDetailPage extends StatelessWidget {
   const PlantDetailPage({Key? key, required this.plant}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SingleChildScrollView(child: Column(
+      mainAxisSize: MainAxisSize.max,
       children: [
         const PlantListMenu(),
         PlantNameWidget(plant: plant),
@@ -22,7 +23,7 @@ class PlantDetailPage extends StatelessWidget {
         PlantClassification(classification: plant.classification),
         //PlantDetails(plant.details),
       ]
-    );
+    ));
   }
 
 }

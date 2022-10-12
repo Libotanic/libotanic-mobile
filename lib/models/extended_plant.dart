@@ -21,8 +21,6 @@ class ExtendedPlant {
 
   ExtendedPlant.fromJson(Map<String, dynamic> parsedJson) {
     id = parsedJson['id'] as int;
-
-    print(parsedJson['classis']);
     plantClass = PlantClass(
       division: Division(
           nameRus: parsedJson['otdel'],
@@ -30,10 +28,9 @@ class ExtendedPlant {
       nameRus: parsedJson['classis'],
       imageURL: TestInfo.classesImages[parsedJson['classis']]!,
     );
-    print(plantClass);
     nameRus = parsedJson['rus_name'];
     nameLat = parsedJson['lat_name'];
-    /*imageURL = parsedJson['mainPic'];
-    description = parsedJson['descr'];*/
+    imageURL = parsedJson['mainPic'];
+    description = parsedJson['descr'];
   }
 }

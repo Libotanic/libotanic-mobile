@@ -10,4 +10,6 @@ class PlantClass extends PlantCategory {
       required this.division,
       String? nameLat})
       : super(nameRus: nameRus, imageURL: imageURL, nameLat: nameLat);
+
+
 }

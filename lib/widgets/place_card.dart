@@ -30,7 +30,7 @@ class PlaceCard extends StatelessWidget {
             )
           ],
           image: DecorationImage(
-            image: NetworkImage(
+            image: AssetImage(
               place.imageURL,
             ),
             fit: BoxFit.cover,

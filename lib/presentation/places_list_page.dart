@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:libotanic/presentation/plants_page.dart';
+import 'package:libotanic/app_state.dart';
 import 'package:libotanic/test_info.dart';
 import 'package:libotanic/widgets/background_widget.dart';
 
@@ -19,9 +20,16 @@ class PlacesListPage extends StatelessWidget {
             child: PlaceCard(
               place: TestInfo.places[id],
             ),
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) =>
-                    const BackgroundWidget(page: PlantsPage()))),
+            onTap: () {
+              AppState.setState(id);
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const BackgroundWidget(
+                    page: PlantsPage(),
+                  ),
+                ),
+              );
+            },
           );
         },
       ),

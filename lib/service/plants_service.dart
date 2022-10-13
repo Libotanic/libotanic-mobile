@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:libotanic/app_state.dart';
 import 'package:libotanic/models/division.dart';
 
 import '../models/extended_plant.dart';
@@ -9,9 +11,10 @@ import '../models/simple_plant.dart';
 class PlantsService {
   static Future<Response> getPlantsInfo() async {
     try {
+      String garden = AppState.currentGarden().toString();
       var response =
-          await Dio().get('https://libotanic.herokuapp.com/garden/1');
-      //print(response);
+          await Dio().get('https://libotanic.herokuapp.com/garden/$garden');
+      print(response);
       return response;
     } catch (e) {
       rethrow;

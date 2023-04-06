@@ -1,10 +1,4 @@
-import 'package:libotanic/models/extended_plant.dart';
-import 'package:libotanic/models/plant_class.dart';
-import 'package:libotanic/models/simple_plant.dart';
-
-import 'models/division.dart';
-import 'models/place.dart';
-
+import 'package:libotanic/wiki.usage/data/export_all_data_models.dart';
 class TestInfo {
   static List<Place> places = [
     Place(0, "Ботанический сад Петра Великого","assets/places/botanicheskiy_sad.jpg"),

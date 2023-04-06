@@ -1,10 +1,26 @@
+import 'dart:async';
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:libotanic/presentation/places_list_page.dart';
-import 'package:libotanic/widgets/background_widget.dart';
+import 'package:libotanic/common/domain/gardens/gardens_bloc.dart';
+import 'package:libotanic/common/domain/plant_detailes/plant_details_bloc.dart';
+import 'package:libotanic/wiki.usage/presentation/export_all_wiki_usage_screens.dart';
+import 'package:libotanic/wiki.usage/presentation/plant_detail_page.dart';
+import 'package:libotanic/wiki.usage/presentation/widgets/background_widget.dart';
+import 'package:provider/provider.dart';
+
+import 'common/domain/plants/plants_bloc.dart';
 
 void main() {
-  runApp(const MyApp());
+  runZonedGuarded(
+        () => runApp(MyApp()),
+        (error, stackTrace) {
+      log(error.toString(), stackTrace: stackTrace);
+      print(error.toString()); // This is the message I print
+    },
+  );
+  //runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +29,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return MultiProvider(
+      providers: [
+        Provider<GardensBloc>(create: (_) => GardensBloc()..add(const GardensEvent.load())),
+        Provider<PlantsBloc>(create: (_) => PlantsBloc()),
+        Provider<PlantDetailsBloc>(create: (_) => PlantDetailsBloc()),
+      ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
@@ -51,17 +72,15 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        home: const MyHomePage(),
+        routes: {
+          "/gardens": (_) => const BackgroundWidget(page: GardensPage()),
+          "/garden_plants": (_) =>
+              const BackgroundWidget(page: GardenPlantsPage()),
+          "/plant_details": (_) => const BackgroundWidget(page: PlantDetailPage()),
+        },
+        initialRoute: "/gardens",
+
       ),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const BackgroundWidget(page: PlacesListPage());
   }
 }

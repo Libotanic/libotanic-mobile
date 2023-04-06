@@ -2,7 +2,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:libotanic/common/data/garden.dart';
 import 'package:libotanic/common/domain/common/gardens_service.dart';
-import 'dart:developer' as developer;
 
 part 'gardens_bloc.freezed.dart';
 

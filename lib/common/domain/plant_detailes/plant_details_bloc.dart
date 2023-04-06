@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:libotanic/common/domain/common/gardens_service.dart';
 
 import '../../data/plant.dart';
-import '../../data/plant_name.dart';
+
 part 'plant_details_bloc.freezed.dart';
 
 class PlantDetailsBloc extends Bloc

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/lists/plants_list.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plants_list_menu/plant_list_menu.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/lists/plants_list.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plants_list_menu/plant_list_menu.dart';
 
 class GardenPlantsPage extends StatelessWidget {
   const GardenPlantsPage({Key? key}) : super(key: key);

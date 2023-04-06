@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../search_page.dart';
 import '../background_widget.dart';
 

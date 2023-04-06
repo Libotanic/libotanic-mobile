@@ -1,9 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:libotanic/common/domain/common/app_state.dart';
-import 'package:libotanic/wiki.usage/data/export_all_data_models.dart';
-
-import '../app/app_state.dart';
+import 'package:libotanic/wiki_usage/data/export_all_data_models.dart';
 
 class PlantsService {
   static Future<Response> getPlantsInfo() async {

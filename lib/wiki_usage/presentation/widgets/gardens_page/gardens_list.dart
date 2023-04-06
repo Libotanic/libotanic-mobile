@@ -1,11 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:libotanic/common/domain/common/app_state.dart';
-import 'package:libotanic/common/domain/gardens/gardens_bloc.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../common/data/garden.dart';
 import '../../../../common/domain/plants/plants_bloc.dart';
-import '../../../domain/app/app_state.dart';
 import 'place_card.dart';
 
 class GardensList extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:libotanic/common/domain/gardens/gardens_bloc.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/gardens_page/gardens_list.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/gardens_page/gardens_list.dart';
 
 
 class GardensPage extends StatelessWidget {

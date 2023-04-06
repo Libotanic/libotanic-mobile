@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 import '../../../data/extended_plant.dart';
 import '../../../data/plant_class.dart';
 import '../../../domain/service/plants_service.dart';
-import '../../plant_detail_page.dart';
-import '../background_widget.dart';
-import '../common/plant_name_widget.dart';
 
 class PlantClassList extends StatelessWidget {
   final PlantClass plantClass;

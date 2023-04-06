@@ -3,13 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:libotanic/common/domain/plant_detailes/plant_details_bloc.dart';
 import 'package:libotanic/common/domain/plants/plants_bloc.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/common/plant_name_widget.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/common/plant_name_widget.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../common/data/plant.dart';
 import '../../../../common/data/plant_name.dart';
-import '../../plant_detail_page.dart';
-import '../background_widget.dart';
 
 class AlphabeticPlantsList extends StatelessWidget {
   const AlphabeticPlantsList({super.key});

@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:libotanic/common/domain/plant_detailes/plant_details_bloc.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plant_details/plant_classification.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plant_details/plant_description.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plant_details/plant_image.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/common/plant_name_widget.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plants_list_menu/plant_list_menu.dart';
-
-import '../data/extended_plant.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/common/plant_name_widget.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plant_details/plant_description.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plant_details/plant_image.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plants_list_menu/plant_list_menu.dart';
 
 class PlantDetailPage extends StatelessWidget {
 

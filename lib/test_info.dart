@@ -1,4 +1,4 @@
-import 'package:libotanic/wiki.usage/data/export_all_data_models.dart';
+import 'package:libotanic/wiki_usage/data/export_all_data_models.dart';
 class TestInfo {
   static List<Place> places = [
     Place(0, "Ботанический сад Петра Великого","assets/places/botanicheskiy_sad.jpg"),

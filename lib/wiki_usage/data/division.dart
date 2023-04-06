@@ -1,5 +1,5 @@
 
-import 'package:libotanic/wiki.usage/data/plant_category.dart';
+import 'package:libotanic/wiki_usage/data/plant_category.dart';
 
 class Division extends PlantCategory {
   const Division(

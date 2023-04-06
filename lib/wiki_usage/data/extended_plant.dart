@@ -1,8 +1,7 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:libotanic/test_info.dart';
-import 'package:libotanic/wiki.usage/data/%D1%81lassification.dart';
-import 'package:libotanic/wiki.usage/data/plant_class.dart';
-import 'package:libotanic/wiki.usage/data/plant_detail.dart';
+import 'package:libotanic/wiki_usage/data/%D1%81lassification.dart';
+import 'package:libotanic/wiki_usage/data/plant_class.dart';
+import 'package:libotanic/wiki_usage/data/plant_detail.dart';
 
 import 'division.dart';
 

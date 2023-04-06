@@ -1,9 +1,8 @@
 import 'package:expansion_widget/expansion_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/lists/plant_class_list.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/lists/plant_class_list.dart';
 
 import '../../../data/division.dart';
-import '../../../data/plant_class.dart';
 import '../../../domain/service/plants_service.dart';
 import '../plant_category_card.dart';
 

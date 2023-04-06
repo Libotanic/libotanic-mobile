@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../plants_list/alphabetic_plants_list.dart';
 import 'grouped_plants_list.dart';
 
 enum Mode { map, alphabeticalList, groupedList }
@@ -14,7 +15,7 @@ class PlantsList extends StatefulWidget {
 }
 
 class PlantsListState extends State<PlantsList> {
-  late Mode mode = Mode.groupedList;
+  late Mode mode = Mode.alphabeticalList;
 
   @override
   void setState(VoidCallback fn) {
@@ -29,8 +30,7 @@ class PlantsListState extends State<PlantsList> {
         // TODO: Handle this case.
         return Container();
       case Mode.alphabeticalList:
-        // TODO: Handle this case.
-        return Container();
+        return const AlphabeticPlantsList();
       case Mode.groupedList:
         return const GroupedPlantsList();
     }

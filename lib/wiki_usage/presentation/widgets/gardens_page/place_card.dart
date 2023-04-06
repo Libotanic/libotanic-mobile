@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:libotanic/common/data/garden.dart';
 
-import '../../../data/place.dart';
-
 class PlaceCard extends StatelessWidget {
   final double height, radius;
   final Garden garden;

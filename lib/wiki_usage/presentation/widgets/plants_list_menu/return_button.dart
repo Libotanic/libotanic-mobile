@@ -6,11 +6,11 @@ class ReturnButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () => Navigator.of(context).pop(), //TODO: pop navigation
-      icon: Image.asset(
-        "assets/icons/back_arrow.png",
-        width: 25,
-      ),
+        onPressed: () => Navigator.of(context).pop(), //TODO: pop navigation
+        icon: Image.asset(
+          "assets/icons/back_arrow.png",
+          width: 25,
+        ),
     );
   }
 }

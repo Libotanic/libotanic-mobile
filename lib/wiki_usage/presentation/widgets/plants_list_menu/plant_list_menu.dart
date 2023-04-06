@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plants_list_menu/return_button.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plants_list_menu/search_button.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plants_list_menu/return_button.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plants_list_menu/search_button.dart';
 
 import 'mode_changing_button.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/lists/division_list.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/plants_list_menu/plant_list_menu.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/lists/division_list.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/plants_list_menu/plant_list_menu.dart';
 
 import '../data/division.dart';
 

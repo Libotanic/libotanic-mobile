@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:libotanic/common/domain/gardens/gardens_bloc.dart';
 import 'package:libotanic/common/domain/plant_detailes/plant_details_bloc.dart';
-import 'package:libotanic/wiki.usage/presentation/export_all_wiki_usage_screens.dart';
-import 'package:libotanic/wiki.usage/presentation/plant_detail_page.dart';
-import 'package:libotanic/wiki.usage/presentation/widgets/background_widget.dart';
+import 'package:libotanic/wiki_usage/presentation/export_all_wiki_usage_screens.dart';
+import 'package:libotanic/wiki_usage/presentation/plant_detail_page.dart';
+import 'package:libotanic/wiki_usage/presentation/widgets/background_widget.dart';
 import 'package:provider/provider.dart';
 
 import 'common/domain/plants/plants_bloc.dart';

@@ -1,6 +1,6 @@
 
-import 'plant_category.dart';
 import 'division.dart';
+import 'plant_category.dart';
 
 class PlantClass extends PlantCategory {
   final Division division;
